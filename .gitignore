@@ -1,68 +1,120 @@
-# ----------------------------
-# PYTHON BACKEND IGNORE RULES
-# ----------------------------
+################################################################################
+#                           GLOBAL IGNORE FILE
+################################################################################
+
+# ============================================
+# PYTHON / FASTAPI BACKEND
+# ============================================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-venv/
-.env
-.env.*
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+.installed.cfg
+*.log
 *.sqlite3
 
-# FastAPI / Uvicorn logs
-*.log
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
 
-# ----------------------------
-# FLUTTER FRONTEND IGNORE RULES
-# ----------------------------
+# FastAPI / Uvicorn files
+*.pid
 
-# Flutter specific
-**/doc/api/
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
+# pycache in any folder
+**/__pycache__/
+
+# ============================================
+# FLUTTER FRONTEND
+# ============================================
+
+# Flutter build output
 build/
-coverage/
+# But keep this rule specific to frontend folder (safer)
+FRONTEND/build/
 
-# iOS
-**/ios/Flutter/.last_build_id
-**/ios/.generated/
-**/ios/Pods/
-**/ios/Podfile.lock
+# Dart Tools
+.dart_tool/
+FRONTEND/.dart_tool/
 
-# Android
-**/android/app/debug
-**/android/app/profile
-**/android/app/release
+# Dart package files
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
 
-# Windows (prevent CMake issues)
-**/windows/flutter/ephemeral/
-**/windows/CMakeFiles/
-**/windows/build/
+# Flutter intermediate files
+**/*.g.dart
+**/*.freezed.dart
 
-# Web
-**/web/.dart_tool/
+# Generated native code
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/flutter_export_environment.sh
+android/app/debug/
+android/app/profile/
+android/app/release/
 
-# ----------------------------
-# IDE / OS FILES
-# ----------------------------
-.idea/
+# ============================================
+# WINDOWS DESKTOP BUILD (CMake)
+# ============================================
+
+# Windows CMake build folder
+windows/runner/win32/
+windows/build/
+FRONTEND/windows/runner/win32/
+FRONTEND/windows/build/
+
+# CMake cache and generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# ============================================
+# NODE / NPM (if used)
+# ============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================================
+# VISUAL STUDIO CODE
+# ============================================
 .vscode/
+*.code-workspace
+
+# ============================================
+# JETBRAINS IDEs
+# ============================================
+.idea/
 *.iml
+
+# ============================================
+# OS GENERATED FILES
+# ============================================
 .DS_Store
 Thumbs.db
-.atom/
-.history
-.svn/
+ehthumbs.db
+*.stackdump
+$RECYCLE.BIN/
 
+# ============================================
+# LOGS / TEMP
+# ============================================
+*.log
+*.tmp
+*.temp
+*.swp
 
-# ----------------------------
-#Flutter
-# ----------------------------
-FRONTEND/build/
-FRONTEND/.dart_tool/
-FRONTEND/.packages
-FRONTEND/.flutter-plugins
-FRONTEND/.flutter-plugins-dependencies
+################################################################################
+# END
+################################################################################
