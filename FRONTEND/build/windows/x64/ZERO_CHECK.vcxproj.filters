@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\DELL\Desktop\verifying_image_authenticity\FRONTEND\build\windows\x64\CMakeFiles\e16436c5668891d3515af3c31ea58888\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{93CA5E7B-1AE7-3FBF-ADA9-820E955A6A2D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

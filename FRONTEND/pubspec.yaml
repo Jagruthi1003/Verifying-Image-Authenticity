@@ -1,0 +1,33 @@
+name: secure_image_app
+description: Flutter frontend for Secure Image Authentication backend
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Networking for backend API
+  http: ^1.2.1
+
+  # Image selection from gallery/camera
+  image_picker: ^1.1.2
+
+  # Native file picker (save dialog + browse folders)
+  file_picker: ^6.1.1
+
+  # Access to local storage directories
+  path_provider: ^2.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended linting rules
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
