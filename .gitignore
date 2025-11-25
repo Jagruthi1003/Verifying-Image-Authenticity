@@ -57,3 +57,12 @@ Thumbs.db
 .history
 .svn/
 
+
+# ----------------------------
+#Flutter
+# ----------------------------
+FRONTEND/build/
+FRONTEND/.dart_tool/
+FRONTEND/.packages
+FRONTEND/.flutter-plugins
+FRONTEND/.flutter-plugins-dependencies
