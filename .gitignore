@@ -1,45 +1,59 @@
-# Miscellaneous
-*.class
-*.log
+# ----------------------------
+# PYTHON BACKEND IGNORE RULES
+# ----------------------------
+__pycache__/
 *.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+*.pyo
+*.pyd
+venv/
+.env
+.env.*
+*.sqlite3
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# FastAPI / Uvicorn logs
+*.log
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# ----------------------------
+# FLUTTER FRONTEND IGNORE RULES
+# ----------------------------
 
-# Flutter/Dart/Pub related
+# Flutter specific
 **/doc/api/
-**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-/coverage/
+build/
+coverage/
 
-# Symbolication related
-app.*.symbols
+# iOS
+**/ios/Flutter/.last_build_id
+**/ios/.generated/
+**/ios/Pods/
+**/ios/Podfile.lock
 
-# Obfuscation related
-app.*.map.json
+# Android
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Windows (prevent CMake issues)
+**/windows/flutter/ephemeral/
+**/windows/CMakeFiles/
+**/windows/build/
+
+# Web
+**/web/.dart_tool/
+
+# ----------------------------
+# IDE / OS FILES
+# ----------------------------
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.atom/
+.history
+.svn/
+
